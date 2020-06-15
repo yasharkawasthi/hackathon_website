@@ -1,11 +1,13 @@
 #footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: skyblue;
     color: black;
     text-align: center;
+    padding:0px;
+    margin:0px;
+    border:0px;
   }
 
 #centered {
@@ -28,10 +30,70 @@
     position: relative;
   }
 
-  #contact {
+#contact {
     position: relative;
     width: 100%;
-    background-color: rgb(21, 147, 197);
+    background-color:darkblue;
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #sponsors {
+    position: relative;
+    width: 100%;
+    background-color:white;
+    color: darkblue;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #rules {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color: lightblue;
     color: black;
     text-align: center;
+    padding: 0px;
+  }
+
+  #phases {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color: lightblue ;
+    color: black;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #themes {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #about {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color:lightblue;
+    color: black;
+    text-align: center;
+    padding: 0px;
+  }
+
+  #timeline {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 0px;
   }
