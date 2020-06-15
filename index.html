@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Hackathon | Version</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-light shadow-sm">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img src="Assets/version_r.png" alt="VERSION" height="25" width="100" class="d-inline-block align-middle mr-2">
-      </a>
+  <div id="logo-container">
+    <div id="centered">
+      <img src="Assets/version_r.png" alt="VERSION" height="25" width="100">
     </div>
   </div>
 </nav>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+
+<nav class="navbar navbar-expand-sm bg-light"> 
+  <a class="navbar-brand" href="#">Hackathon</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#about">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#themes">Themes</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#phases">Phases</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
       </li>    
     </ul>
-  </div>  
-</nav>
+  </div>
+</nav> 
+
 <section id="home">
   <div>
-    <img src="" alt="Technothon Logo"><br>
+    <img src="Assets/hacko.jpg" alt="Hackathon Logo" height="250" width="250"><br>
     <h3>Brought to you by</h3><br>
-    <img src="" alt="Version Logo">
+    <img src="Assets/version_r.png" alt="Version Logo" height="50" width="200">
   </div>
 </section>
 <section id="about">
@@ -80,7 +87,7 @@
     <h2>Contact us at :</h2><br>
     <h3>ABC : +91 **********</h3>
     <h3>XYZ : +91 **********</h3>
-    <h3>Email your queries at <a href="mailto:technothon@gmail.com">technothon@gmail.com</a></h3>
+    <h3>Email your queries at <a href="mailto:hackathon@gmail.com">hackathon@gmail.com</a></h3>
   </div>
 </section>
 <footer id="footer">
