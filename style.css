@@ -1,161 +1,117 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body{
+  height: 100%;
+  margin: 0;
 }
-
-html{
-  scroll-behavior: smooth;
-}
-
-ul, nav{
-	list-style: none;
-}
-
-
-#footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: skyblue;
-    color: black;
-    text-align: center;
-    padding:0px;
-    margin:0px;
-    border:0px;
-  }
-
-  @media screen and (min-width: 992px) {
-    #centered {
-      position: relative;
-      top: 50%;
-      left: 30%;
-      padding-left: 0;
-    }
-  }
-#centered {
-    position: relative;
-    top: 50%;
-    
-  }
-
-#logo-container {
-    height:20px;
-}
-/* #home {
-  background-image: url(Assets/bg1.jpg);
-  min-height: 620px;
-  margin-top: 40px;;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-} */
-
-
 #home{
-	position: relative;
-	justify-content: center;
-	min-height: 100vh;
-	color: #fff;
-	text-align: center;
+    min-height: 100vh;
+}
+#about{
+    min-height: 100vh;
+}
+#themes{
+    min-height: 100vh;
+    padding-top: 5em;
+}
+#phases{
+    min-height: 100vh;
+}
+#timeline{
+    min-height: 100vh;
+    padding-top: 5em;
+}
+#rules{
+    min-height: 100vh;
+}
+#contact{
+    min-height: 50vh;
+}
+#bottom{
+    position:relative;
+}
+#footer {
+    min-height: 25vh;
+  }
+.img-circle{
+    border-radius: 50%;
+    padding:60px;
 }
 
-#home .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #2196F3;
-	z-index: -1;
+.row {
+    position: relative;
+    margin-top: 25vh;
+    overflow: hidden;
 }
 
-.hackathon-logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
-.message {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  color: white;
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
 }
 
-.version-logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-  padding-bottom: 20px;
+.text-center{
+    text-decoration: none;
+    text-align: center;
 }
 
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
 
-#contact {
-    position: relative;
-    width: 100%;
-    background-color:darkblue;
-    color: white;
-    text-align: center;
-    padding: 0px;
-  }
+.text-copy:nth-child(1){
+    stroke: #4D163D;
+	animation-delay: -1;
+}
 
-  #sponsors {
-    position: relative;
-    width: 100%;
-    background-color:white;
-    color: darkblue;
-    text-align: center;
-    padding: 0px;
-  }
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
 
-  #rules {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background-color: lightblue;
-    color: black;
-    text-align: center;
-    padding: 0px;
-  }
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
 
-  #phases {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background-color: lightblue ;
-    color: black;
-    text-align: center;
-    padding: 0px;
-  }
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
 
-  #themes {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background-color:white;
-    color: black;
-    text-align: center;
-    padding: 0px;
-  }
+.text-copy:nth-child(5){
+	stroke: #2B2B52;
+	animation-delay: -5s;
+}
 
-  #about {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background-color:lightblue;
-    color: black;
-    text-align: center;
-    padding: 0px;
-  }
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
 
-  #timeline {
-    position: relative;
-    width: 100%;
-    height:100vh;
-    background-color:white;
-    color: black;
+.about_hackathon{
     text-align: center;
-    padding: 0px;
-  }
+}
+
+.outer{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner{
+    margin-left: auto;
+    margin-right: auto;
+}
