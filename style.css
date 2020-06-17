@@ -14,6 +14,10 @@ html, body{
     min-height: 100vh;
     padding-top: 5em;
 }
+#band{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 #phases{
     min-height: 100vh;
 }
@@ -30,10 +34,6 @@ html, body{
 #bottom{
     position:relative;
 }
-#footer {
-    min-height: 25vh;
-    margin-bottom: 0;
-  }
 .img-circle{
     border-radius: 50%;
     padding:60px;
@@ -52,7 +52,11 @@ svg {
     height: 300px;
     margin: 0 auto;
 }
-
+.col-lg-3{
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
 .text-center{
     text-decoration: none;
     text-align: center;
@@ -107,10 +111,14 @@ svg {
     width: 100%;
 }
 
-
 .middle{
     display: table-cell;
     vertical-align: middle;
+}
+
+.inner{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .inner-rules{
@@ -141,4 +149,119 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.timeline {
+    height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.content {
+    padding-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+    text-align: justify;
+}
+
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -11px;
+    width: 10px;
+    height: 10px;
+    background: #c23941;
+    border-radius:50%;
+    box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+
+}
+
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -9px;
+    width: 10px;
+    height: 10px;
+    background: #c23941;
+    border-radius:50%;
+    box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+
+}
+
+.timeline ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #303e49;
+}
+
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+    line-height: 1.7;
+}
+.timeline ul li h4{
+     margin: 0;
+     padding: 0;
+     font-size: 16px;
+}
+
+.timeline ul li:nth-child(odd) .time{
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin-bottom: 0;
+    padding: 8px 16px;
+    background: #303249;
+    color: #c5c5c5;
+    border-radius: 18px;
+}
+
+.timeline ul li:nth-child(even) .time{
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin-bottom: 0;
+    padding: 8px 16px;
+    background: #303249;
+    color: #c5c5c5;
+    border-radius: 18px;
+}
+
+.list{
+    padding-left: 0px;
+    padding-right: 0px;
 }
