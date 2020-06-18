@@ -27,12 +27,9 @@
     border-top: 60px solid seashell;
     border-bottom: 60px solid seashell;
 }
-
-#demo1,#demo2,#demo3,#demo4,#demo5{
-  text-align: justify;
-  background:#EA7773;
+#band{
+    /* margin-left: 0em; */
 }
-
 #phases{
    min-height: 100%;
    display: block;
@@ -45,10 +42,6 @@
 }
 #contact{
     min-height: 50vh;
-}
-#contact a{
-  color: black;
-  text-decoration: underline;
 }
 #bottom{
     position:relative;
@@ -190,11 +183,6 @@ footer p{
 footer p span {
   color: #f51735;
   font-size: 25px;
-}
-
-footer p a {
-  color: black;
-  text-decoration: underline;
 }
 
 .outer-contact{
@@ -352,5 +340,3 @@ body {
     left: -33px;
   }
 }
-
-
