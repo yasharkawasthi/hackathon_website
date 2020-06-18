@@ -340,3 +340,25 @@ body {
     left: -33px;
   }
 }
+
+.mail {
+  margin-top: 10px;
+}
+
+.mail a {
+  padding: 5px;
+}
+
+.mail a:link, a:visited {
+  background-color: #3d9e67;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mail a:hover, a:active {
+  background-color: #67CC8E;
+}
