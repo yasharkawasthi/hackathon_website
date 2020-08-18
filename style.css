@@ -24,6 +24,7 @@
 #themes{
     min-height: 110vh;
     padding-top: 5em;
+	padding-bottom: 5em;
     border-top: 60px solid #C8FFFF;
     border-bottom: 60px solid #C8FFFF;
 }
