@@ -9,10 +9,6 @@
 #home{
     padding: 0;
     height: 100vh;
-    background: url('Assets/back.jpg');
-    background-size: 100%,100%;
-    
-    background-position: center;
 }
 
 #about{
@@ -24,7 +20,6 @@
 #themes{
     min-height: 110vh;
     padding-top: 5em;
-	padding-bottom: 5em;
     border-top: 60px solid #C8FFFF;
     border-bottom: 60px solid #C8FFFF;
 }
@@ -402,16 +397,8 @@ body {
   }
 }
 
-.mail {
+.regbtn {
   margin-top: 10px;
-}
-
-.mail a {
-  padding: 5px;
-  color:white;
-}
-
-.mail {
   background-color: #65524D;
   color: white;
   padding: 12px 20px;
@@ -421,6 +408,7 @@ body {
   font-size: 16px;
 }
 
-.mail {
-  background-color: #65524D;
+.regbtn a {
+  padding: 5px;
+  color:white;
 }
