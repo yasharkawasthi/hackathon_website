@@ -473,7 +473,9 @@ function test_data($data)
 <body>
     <div class="main">
         <section class="submission">
-            <img src="assets/hori.jpg" alt="">
+            <div class="image">
+                <img src="assets/hori1.jpg" alt="" >
+            </div>
             <div class="container">
                 <div class="submission-content">
                     <form method="POST" id="submission-form" class="submission-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  enctype="multipart/form-data" >
