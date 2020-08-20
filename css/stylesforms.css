@@ -11,49 +11,49 @@ display-flex, .display-flex, .display-flex-center {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    src: url("../fonts/montserrat/Montserrat-Light.ttf");
+    src: url("../Assets/montserrat/Montserrat-Light.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+    src: url("../Assets/montserrat/Montserrat-Regular.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 400;
-    src: url("../fonts/montserrat/Montserrat-Italic.ttf");
+    src: url("../Assets/montserrat/Montserrat-Italic.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+    src: url("../Assets/montserrat/Montserrat-Medium.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+    src: url("../Assets/montserrat/Montserrat-SemiBold.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+    src: url("../Assets/montserrat/Montserrat-Bold.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 700;
-    src: url("../fonts/montserrat/Montserrat-BoldItalic.ttf");
+    src: url("../Assets/montserrat/Montserrat-BoldItalic.ttf");
      }
   @font-face {
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 900;
-    src: url("../fonts/montserrat/montserrat-v12-latin-900.ttf"), url("../fonts/montserrat/montserrat-v12-latin-900.eot") format("embedded-opentype"), url("../fonts/montserrat/montserrat-v12-latin-900.svg") format("woff2"), url("../fonts/montserrat/montserrat-v12-latin-900.woff") format("woff"), url("../fonts/montserrat/montserrat-v12-latin-900.woff2") format("truetype"); }
+    src: url("../Assets/montserrat/montserrat-v12-latin-900.ttf"), url("../Assets/montserrat/montserrat-v12-latin-900.eot") format("embedded-opentype"), url("../Assets/montserrat/montserrat-v12-latin-900.svg") format("woff2"), url("../Assets/montserrat/montserrat-v12-latin-900.woff") format("woff"), url("../Assets/montserrat/montserrat-v12-latin-900.woff2") format("truetype"); }
   
     a:focus, a:active {
     text-decoration: none;
@@ -121,7 +121,7 @@ display-flex, .display-flex, .display-flex-center {
     font-weight: 900;
     color: #222;
     font-family: 'Montserrat';
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px; }
@@ -130,18 +130,14 @@ display-flex, .display-flex, .display-flex-center {
     clear: both; }
   
   body {
+    background-image: url('../Assets/backform.jpg');
+    border:0px;
+    margin:0px;
     font-size: 14px;
     line-height: 1.8;
     color: #222;
     font-weight: 400;
     font-family: 'Montserrat';
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-position: center center;
     padding: 0px 0px; }
   
   .container {
@@ -358,27 +354,19 @@ display-flex, .display-flex, .display-flex-center {
     color:red;
   }
 
-  .form-title
+  .error_msg
   {
     color:red;
+    font-weight: bold;
   }
 
-  .labels
+  .dropdown
   {
-    color:red;
-  }
-
-  .slabel
-  {
-    color:red;
-  }
-
-  .error-msg
-  {
-    color:red;
-  }
-
-  .has-error
-  {
-    color:red;
+    padding-left: 1.5em;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
   }

@@ -34,9 +34,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         }
         else
         {
-            if ( $_FILES['file']['type'] != "application/pdf")
+            if ( $_FILES['file']['size'] == 0 )
             {
-                $file_err = "Error occured while uploading file : ".$_FILES['file']['name']."<br/>"."Invalid  file extension, should be pdf !!"."<br/>";
+                $file_err = "Error occured while uploading file. ".$_FILES['file']['name']."<br/>"."No File Chosen."."<br/>";
+            }
+            else if ( $_FILES['file']['type'] != "application/pdf")
+            {
+                $file_err = "Error occured while uploading file ".$_FILES['file']['name']."<br/>"."Invalid file extension. File should be pdf."."<br/>";
             }
         }
     }
@@ -463,8 +467,8 @@ function test_data($data)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hackathon | Registration Form</title>
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/stylesform.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/stylesforms.css">
 </head>
 <body>
     <div class="main">
@@ -474,11 +478,11 @@ function test_data($data)
                 <div class="submission-content">
                     <form method="POST" id="submission-form" class="submission-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  enctype="multipart/form-data" >
                         
-                        <h2 class="form-title">Hackathon | Registrations</h2> 
+                        <h2 class="form-title">Hackathon <br> Registrations</h2> 
 
                         <h3 class="labels">Team Details <span class="star">*</span></h3>
                         <div class="form-group">
-                            <input type="text" class="form-input <?php echo (!empty($teamname_err)) ? 'has-error' : ''; ?>" name="teamname" id="teamname" placeholder="Team Name" value="<?php echo $teamname; ?>"/>
+                            <input type="text" class="form-input" name="teamname" id="teamname" placeholder="Team Name" value="<?php echo $teamname; ?>"/>
                             <span class="error_msg"><?php echo $teamname_err; ?></span>
                         </div>
                         <h3 class="labels">Team Leader Details <span class="star">*</span></h3>
@@ -573,13 +577,12 @@ function test_data($data)
 
                         <h3 class="labels">Project Idea Details <span class="star">*</span></h3>
                         <div class="form-group">
-                            <input type="text" class="form-input <?php echo (!empty($ideaname_err)) ? 'has-error' : ''; ?>" name="ideaname" id="ideaname" placeholder="Project Idea Name" value="<?php echo $ideaname; ?>"/>
+                            <input type="text" class="form-input" name="ideaname" id="ideaname" placeholder="Project Idea Name" value="<?php echo $ideaname; ?>"/>
                            <span class="error_msg"><?php echo $ideaname_err; ?></span>
                         </div>
 
                         <h3 class="labels">Project Idea's Theme <span class="star">*</span></h3>
                         <div class="form-group">
-                            <label class="slabel" for="themename">Choose Theme: </label>
                             <select class="dropdown" name="themename" id="themename">
                                 <option value="">Select...</option>
                                 <option value="Human Augmentation">Human Augmentation</option>
@@ -593,7 +596,7 @@ function test_data($data)
 
                         <h3 class="labels">Project Idea Abstract Upload <span class="star">*</span></h3>
                         <div class="form-group">
-                            <input type="file" class="form-input" name="file" id="file">       
+                            <input type="file" class="form-input upload" name="file" id="file">   
                         </div>
                         <span class="error_msg"><?php echo $file_err; ?></span>
 
