@@ -1,0 +1,30 @@
+.page{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 95vh;
+}
+.heading{
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+.image{
+  margin: auto;
+  width: 75%;
+  padding-left: 100px;
+}
+.para{
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+.thanks{
+  font-size:75px;
+  text-align: center;
+}
+.text{
+  text-align: center;
+}
+img{
+  height: 172px;
+  width: 223px;
+}

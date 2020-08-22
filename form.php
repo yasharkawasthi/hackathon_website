@@ -396,52 +396,52 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
          empty($member3name_err) && empty($member3clgname_err) && empty($member3email_err) && empty($member3contact_err) &&
          empty($member4name_err) && empty($member4clgname_err) && empty($member4email_err) && empty($member4contact_err) )
     {
-        $sql = "INSERT INTO registrations (teamname,leadername,leaderclgname,leaderemail,leadercontact,
-        member1name,member1clgname,member1email,member1contact,member2name,member2clgname,member2email,member2contact,
-        member3name,member3clgname,member3email,member3contact,member4name,member4clgname,member4email,member4contact,
-        ideaname,themename,file) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-        if($stmt = mysqli_prepare($link, $sql))
-        {
-            mysqli_stmt_bind_param($stmt, "ssssssssssssssssssssssss",$p_teamname,$p_leadername,$p_leaderclgname,$p_leaderemail,$p_leadercontact,
-            $p_member1name,$p_member1clgname,$p_member1email,$p_member1contact,$p_member2name,$p_member2clgname,$p_member2email,$p_member2contact,
-            $p_member3name,$p_member3clgname,$p_member3email,$p_member3contact,$p_member4name,$p_member4clgname,$p_member4email,$p_member4contact,
-            $p_ideaname,$p_themename,$p_file);
+        // $sql = "INSERT INTO registrations (teamname,leadername,leaderclgname,leaderemail,leadercontact,
+        // member1name,member1clgname,member1email,member1contact,member2name,member2clgname,member2email,member2contact,
+        // member3name,member3clgname,member3email,member3contact,member4name,member4clgname,member4email,member4contact,
+        // ideaname,themename,file) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        // if($stmt = mysqli_prepare($link, $sql))
+        // {
+        //     mysqli_stmt_bind_param($stmt, "ssssssssssssssssssssssss",$p_teamname,$p_leadername,$p_leaderclgname,$p_leaderemail,$p_leadercontact,
+        //     $p_member1name,$p_member1clgname,$p_member1email,$p_member1contact,$p_member2name,$p_member2clgname,$p_member2email,$p_member2contact,
+        //     $p_member3name,$p_member3clgname,$p_member3email,$p_member3contact,$p_member4name,$p_member4clgname,$p_member4email,$p_member4contact,
+        //     $p_ideaname,$p_themename,$p_file);
 
-            $p_teamname=$teamname;
-            $p_leadername=$leadername;
-            $p_leaderclgname=$leaderclgname;
-            $p_leaderemail=$leaderemail;
-            $p_leadercontact=$leadercontact;
-            $p_member1name=$member1name;
-            $p_member1clgname=$member1clgname;
-            $p_member1email=$member1email;
-            $p_member1contact=$member1contact;
-            $p_member2name=$member2name;
-            $p_member2clgname=$member2clgname;
-            $p_member2email=$member2email;
-            $p_member2contact=$member2contact;
-            $p_member3name=$member3name;
-            $p_member3clgname=$member3clgname;
-            $p_member3email=$member3email;
-            $p_member3contact=$member3contact;
-            $p_member4name=$member4name;
-            $p_member4clgname=$member4clgname;
-            $p_member4email=$member4email;
-            $p_member4contact=$member4contact;
-            $p_ideaname=$ideaname;
-            $p_themename=$themename;
-            $p_file=$file;
+        //     $p_teamname=$teamname;
+        //     $p_leadername=$leadername;
+        //     $p_leaderclgname=$leaderclgname;
+        //     $p_leaderemail=$leaderemail;
+        //     $p_leadercontact=$leadercontact;
+        //     $p_member1name=$member1name;
+        //     $p_member1clgname=$member1clgname;
+        //     $p_member1email=$member1email;
+        //     $p_member1contact=$member1contact;
+        //     $p_member2name=$member2name;
+        //     $p_member2clgname=$member2clgname;
+        //     $p_member2email=$member2email;
+        //     $p_member2contact=$member2contact;
+        //     $p_member3name=$member3name;
+        //     $p_member3clgname=$member3clgname;
+        //     $p_member3email=$member3email;
+        //     $p_member3contact=$member3contact;
+        //     $p_member4name=$member4name;
+        //     $p_member4clgname=$member4clgname;
+        //     $p_member4email=$member4email;
+        //     $p_member4contact=$member4contact;
+        //     $p_ideaname=$ideaname;
+        //     $p_themename=$themename;
+        //     $p_file=$file;
 
-            if(mysqli_stmt_execute($stmt))
-            {
+        //     if(mysqli_stmt_execute($stmt))
+        //     {
                 header("location: thankyou.php");
-            }
-            else
-            {
-                echo "Something went wrong. Please try again later.";
-            }
-            mysqli_stmt_close($stmt);
-        }
+        //     }
+        //     else
+        //     {
+        //         echo "Something went wrong. Please try again later.";
+        //     }
+        //     mysqli_stmt_close($stmt);
+        // }
     }
 
     mysqli_close($link);
@@ -468,7 +468,7 @@ function test_data($data)
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hackathon | Registration Form</title>
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/stylesforms.css">
+    <link rel="stylesheet" href="css/styleform.css">
 </head>
 <body>
     <div class="main">
