@@ -5,8 +5,16 @@ display-flex, .display-flex, .display-flex-center {
   list-type-ulli {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+   }
   
+    div.image {
+      width: 100%;
+      /* background-color:; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 20px;
+    }
+
   @font-face {
     font-family: 'Montserrat';
     font-style: normal;

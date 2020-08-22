@@ -313,6 +313,7 @@ body {
   opacity: 0;
 }
 .timeline ul li .content {
+  border-radius: 10px;
  -webkit-border-bottom-right-radius: 10px;
  -webkit-border-bottom-left-radius:10px;
   background: #65524D;
